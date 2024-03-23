@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "cs224u-projects"
+version = "0.1.0"
+description = ""
+authors = ["Michael Hassler"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.26.4"
+scipy = "^1.12.0"
+matplotlib = ">=3.7.0"
+scikit-learn = ">=1.0.2"
+nltk = ">=3.7"
+pytest = ">=7.1"
+jupyter = ">=1.0.0"
+pandas = ">=1.5"
+transformers = "==4.37.1"
+datasets = "==2.14.6"
+spacy = "==3.7.2"
+torch = {version = "2.1.2", source = "pytorch-cpu"}
+torchvision = {version = "0.16.2", source = "pytorch-cpu"}
+torchaudio = {version = "2.1.2", source = "pytorch-cpu"}
+dspy-ai = "^2.1.9"
+python-dotenv = "^1.0.1"
+wget = "^3.2"
+openai = "<=0.28.1"
+tiktoken = "^0.6.0"
+
+
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
