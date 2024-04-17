@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "cs224u-projects"
+name = "cs224u-final-project"
 version = "0.1.0"
 description = ""
 authors = ["Michael Hassler"]
@@ -18,20 +18,16 @@ pandas = ">=1.5"
 transformers = "==4.37.1"
 datasets = "==2.14.6"
 spacy = "==3.7.2"
-torch = {version = "2.1.2", source = "pytorch-cpu"}
-torchvision = {version = "0.16.2", source = "pytorch-cpu"}
-torchaudio = {version = "2.1.2", source = "pytorch-cpu"}
 dspy-ai = "^2.1.9"
 python-dotenv = "^1.0.1"
 wget = "^3.2"
-openai = "<=0.28.1"
 tiktoken = "^0.6.0"
-
-
-[[tool.poetry.source]]
-name = "pytorch-cpu"
-url = "https://download.pytorch.org/whl/cpu"
-priority = "supplemental"
+torch = "^2.2.2"
+torchvision = "^0.17.2"
+torchaudio = "^2.2.2"
+tqdm = "^4.66.2"
+openai = "^1.17.1"
+ragas = "^0.1.7"
 
 [build-system]
 requires = ["poetry-core"]
